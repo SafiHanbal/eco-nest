@@ -14,9 +14,9 @@
     {{-- Navbar --}}
     <nav
       class="flex items-center justify-between bg-slate-900 px-4 py-4 text-white">
-      <div>
+      <a href="{{ route('products.index') }}">
         Eco Nest
-      </div>
+      </a>
 
       <ul>
         @if (auth()->user())
@@ -48,7 +48,7 @@
       </div>
     @endif
     {{-- Container --}}
-    <main class="container mx-auto my-6">
+    <main class="mx-auto my-6 w-[800px]">
       {{ $slot }}
     </main>
   </body>
